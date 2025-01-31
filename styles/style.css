@@ -24,7 +24,8 @@
 }
 
 /* ==== header ==== */
-.header {}
+
+/* .header {} */
 
 .header__container {
   display: flex;
