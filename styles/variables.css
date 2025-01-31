@@ -3,14 +3,17 @@
 :root {
     --font-primary: 'Inter-Variable', sans-serif;   /* Основной шрифт */
     --font-accent: 'PressStart2P-Regular', cursive;
-    --font-weight-body: 400; /* Толщина основного текста карточки */
-    --font-weight-title: 700; /* Толщина заголовка карточки */
-    /* --font-variation-weight: 400; Основной вес шрифта для page */
-
-
-    /* --background-image: ; */
+    --font-weight-body: 400;    /* Толщина основного текста карточки */
+    --font-weight-title: 700;   /* Толщина заголовка карточки */
+    
+    --background-image: repeating-linear-gradient(to right,
+            rgb(211, 211, 211) 0px 2px,
+            transparent 2px 4px),
+        repeating-linear-gradient(to bottom,
+            rgb(211, 211, 211) 0px 2px,
+            transparent 2px 4px),
+        linear-gradient(to bottom, rgb(231, 231, 231) 0.01%, rgb(26, 26, 26) 100%);
 
     --accent-color: #000;
-    --decor-color: #fff;
+    --background-color: #fff;
 }
-
