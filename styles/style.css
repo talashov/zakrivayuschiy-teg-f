@@ -132,8 +132,14 @@
   color: var(--background-color);
 }
 
+
 .dialog__btn-overlay:focus {
   box-shadow: 2px 2px 0 0 #000;
+}
+
+.btn__like:hover {
+  background-color: var(--accent-color);
+  color: var(--background-color);
 }
 
 .btn {
@@ -146,12 +152,6 @@
 
   cursor: pointer;
   transition: all 0.3s;
-
-}
-
-.btn:hover {
-  background-color: var(--accent-color);
-  color: var(--background-color);
 }
 
 .btn:focus {
@@ -193,10 +193,18 @@
 }
 
 .dialog__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 18px 21px 18px 48px;
-  margin: 0 180px 105px 180px;
+  margin: 0 100px 105px 180px;
 }
 
 .dialog__btn-overlay {
   padding: 13px 132px;
+}
+
+.button__icon {
+  width: 40px;
+  height: 40px;
 }
