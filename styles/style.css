@@ -151,7 +151,7 @@
   padding: 9px 31px;
 
   cursor: pointer;
-  transition: all 0.3s;
+  transition: 0.3s;
 }
 
 .btn:focus {
