@@ -112,12 +112,20 @@
 
   mix-blend-mode: hard-light;
   opacity: 0.5;
-  text-shadow:
-    -1px -1px 0 #ffffff,
-    1px -1px 0 #ffffff,
-    -1px 1px 0 #ffffff,
-    1px 1px 0 #ffffff;
+  /* text-shadow:
+    -1px -1px 0 var(--stroke-color),
+    1px -1px 0 var(--stroke-color),
+    -1px 1px 0 var(--stroke-color),
+    1px 1px 0 var(--stroke-color); */
+  -webkit-text-stroke: 1px var(--stroke-color);
 }
+
+@supports (text-stroke: 1px var(--stroke-color)) {
+  .post__image-overlay {
+    text-stroke: 1px var(--stroke-color);
+  }
+}
+
 
 .post__text {
   font-size: 18px;
