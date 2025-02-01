@@ -86,6 +86,19 @@
   width: 100%;
 }
 
+.post__image-еffect {
+  mix-blend-mode: hard-light;
+}
+
+.еffect-1 {
+  background: red;
+}
+
+.еffect-2 {
+  background: lightgreen;
+  left: 40px;
+}
+
 .post__image-overlay {
   position: absolute;
   content: '';
@@ -95,7 +108,7 @@
   font-family: var(--font-accent);
   font-weight: var(--font-weight-body);
   font-size: 14px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 
   mix-blend-mode: hard-light;
   opacity: 0.5;
