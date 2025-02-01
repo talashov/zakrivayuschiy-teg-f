@@ -1,8 +1,8 @@
 /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца +
-✦ card__like-button — для кнопки Like рядом с иконкой +
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
@@ -86,19 +86,6 @@
   width: 100%;
 }
 
-.post__image-еffect {
-  mix-blend-mode: hard-light;
-}
-
-.еffect-1 {
-  background: red;
-}
-
-.еffect-2 {
-  background: lightgreen;
-  left: 40px;
-}
-
 .post__image-overlay {
   position: absolute;
   content: '';
@@ -155,7 +142,7 @@
 
 
 .dialog__btn-overlay:focus {
-  box-shadow: 2px 2px 0 0 #000;
+  box-shadow: 2px 2px 0 0 var(--accent-color);
 }
 
 .btn__like:hover {
@@ -176,7 +163,7 @@
 }
 
 .btn:focus {
-  box-shadow: 2px 2px 0 0 #000;
+  box-shadow: 2px 2px 0 0 var(--accent-color);
 }
 
 .btn:focus-visible {
@@ -207,10 +194,22 @@
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
   width: 357px;
-  height: 193px;
 
-  padding: 32px 32px 30px 32px;
-  margin-bottom: 100px;
+  padding: 32px 25px 30px 32px;
+  margin-bottom: 250px;
+}
+
+.dialog[open] {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.dialog::backdrop {
+  opacity: 0.75;
+  background: var(--accent-color);
 }
 
 .dialog__btn {
@@ -222,10 +221,17 @@
 }
 
 .dialog__btn-overlay {
-  padding: 13px 132px;
+  padding: 13px 140px;
+  inline-size: 100%;
+}
+
+.dialog__text {
+  width: 234px;
 }
 
 .button__icon {
   width: 40px;
   height: 40px;
 }
+
+@media (width <=375px) {}
