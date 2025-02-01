@@ -17,4 +17,9 @@
             rgb(211, 211, 211) 0px 2px,
             transparent 2px 4px),
         linear-gradient(to bottom, rgb(231, 231, 231) 0.01%, rgb(26, 26, 26) 100%);
+
+    --contour-color: #000;
+    --sparks-color: #ff0000;
+    --main-body-color: #fff;
+    --core-color: #fff;
 }

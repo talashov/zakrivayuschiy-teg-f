@@ -54,7 +54,9 @@
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
-/* .main {} */
+.main {
+  margin-bottom: 100px;
+}
 
 .section-post {
   max-width: 696px;
@@ -140,8 +142,6 @@
 
 /* .like-icon {} */
 
-/* .button__text {} */
-
 .btn {
   position: relative;
   z-index: 1;
@@ -210,17 +210,18 @@
   filter: sepia(80%);
 }
 
-.dialog__btn {
+.dialog__save {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  gap: 8px;
-  padding: 18px 21px 18px 48px;
-  margin: 0 100px 105px 180px;
+  gap: 10px;
+  padding: 15px 20px;
+  margin: 0 auto;
 }
 
-.button__text,
-.button__icon {
-  color: var(--button-text-color, #ffffff);
+.button__text {
+  color: var(--background-color);
   mix-blend-mode: difference;
 }
 
