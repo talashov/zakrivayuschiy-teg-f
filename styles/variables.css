@@ -2,7 +2,7 @@
 
 :root {
     --font-primary: 'Inter-Variable', sans-serif;   /* Основной шрифт */
-    --font-accent: 'PressStart2P-Regular', cursive;
+    --font-accent: 'PressStart2P', cursive;
     --font-weight-body: 400;
     --font-weight-title: 700;
 
