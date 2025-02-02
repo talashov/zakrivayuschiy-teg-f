@@ -104,6 +104,7 @@
 
 @supports (text-stroke: 1px var(--stroke-color)) or (-webkit-text-stroke: 1px var(--stroke-color)) {
   .post__image-overlay {
+    text-shadow: none;
     text-stroke: 1px var(--stroke-color);
     -webkit-text-stroke: 1px var(--stroke-color);
   }
@@ -259,7 +260,8 @@
 }
 
 .dialog__text {
-  width: 234px;
+  width: 100%;
+  max-width: 234px;
 }
 
 .dialog__btn-overlay {
