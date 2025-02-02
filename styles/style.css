@@ -17,7 +17,7 @@
   flex-direction: column;
 
   font-family: var(--font-primary);
-  font-variation-settings: 'wght' var(--font-variation-weight);
+  font-variation-settings: 'wght' var(--font-weight-body);
 
   background-image: var(--background-image);
   background-size: cover;
@@ -39,8 +39,8 @@
   text-transform: uppercase;
 
   min-width: 696px;
-  height: 366px;
   border: 2px solid var(--accent-color);
+  padding: 128px 0;
   margin-top: 100px;
   margin-bottom: 102px;
   background-color: var(--background-color);
