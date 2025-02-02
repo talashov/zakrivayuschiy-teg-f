@@ -21,6 +21,7 @@
 
   background-image: var(--background-image);
   background-size: cover;
+  background-attachment: fixed;
 
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -94,17 +95,17 @@
 
   mix-blend-mode: hard-light;
   opacity: 0.5;
-  /* text-shadow:
+  text-shadow:
     -1px -1px 0 var(--stroke-color),
     1px -1px 0 var(--stroke-color),
     -1px 1px 0 var(--stroke-color),
-    1px 1px 0 var(--stroke-color); */
-  -webkit-text-stroke: 1px var(--stroke-color);
+    1px 1px 0 var(--stroke-color);
 }
 
-@supports (text-stroke: 1px var(--stroke-color)) {
+@supports (text-stroke: 1px var(--stroke-color)) or (-webkit-text-stroke: 1px var(--stroke-color)) {
   .post__image-overlay {
     text-stroke: 1px var(--stroke-color);
+    -webkit-text-stroke: 1px var(--stroke-color);
   }
 }
 
@@ -242,7 +243,6 @@
   width: 357px;
 
   padding: 32px 25px 30px 32px;
-  margin-bottom: 250px;
 }
 
 .dialog[open] {
