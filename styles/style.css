@@ -307,18 +307,27 @@
   }
 
   .post__text-container {
-    padding: 32px 22px 27px 23px;
+    padding: 26px 27px 27px 23px;
   }
 
   .section-post {
     margin-bottom: 54px;
   }
 
+  .button__icon {
+    block-size: 28px;
+    inline-size: 28px;
+}
+
   .dialog__save {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8px 20px;
+    padding: 17px 20px;
     gap: 4px;
+  }
+
+  .dialog__btn-overlay {
+    padding: 13px 132px;
   }
 }
