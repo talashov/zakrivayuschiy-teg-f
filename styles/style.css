@@ -67,7 +67,7 @@
 
 .post__title {
   font-family: var(--font-primary);
-  font-variation-settings: var(--font-weight-title);
+  font-variation-settings: 'wght' var(--font-weight-title);
   font-size: 18px;
   padding: 3px 10px 3px 10px;
   border-bottom: 2px solid var(--accent-color);
