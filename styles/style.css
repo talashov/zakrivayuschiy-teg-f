@@ -80,7 +80,9 @@
 .post__image {
   display: block;
   width: 100%;
-  min-height: 696px;
+  object-fit: cover;
+  object-position: center;
+  max-height: 696px;
 }
 
 .post__image-overlay {
@@ -113,7 +115,7 @@
 
 .post__text-container {
   border-top: 2px solid var(--accent-color);
-  padding: 27px 22px 27px 23px;
+  padding: 32px 22px 27px 23px;
 }
 
 .post__text {
@@ -251,7 +253,8 @@
 }
 
 .dialog__icon {
-  block-size: 40px;
+  block-size: 38px;
+  margin-bottom: 10px;
 }
 
 .dialog {
@@ -271,9 +274,8 @@
 .dialog[open] {
   display: grid;
   grid-template-columns: 40px 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
   align-items: center;
-  max-height: 193px;
   gap: 18px;
 }
 
